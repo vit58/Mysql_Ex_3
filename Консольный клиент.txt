@@ -1,0 +1,53 @@
+
+C:\Users\User>mysql vk < VCC.sql
+
+C:\Users\User>mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 16
+Server version: 8.0.23 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> USE vk;
+Database changed
+mysql> SHOW TABLES;
++---------------------+
+| Tables_in_vk        |
++---------------------+
+| communities         |
+| communities_users   |
+| friendshep_statuses |
+| friendship          |
+| media               |
+| media_types         |
+| messages            |
+| profiles            |
+| users               |
++---------------------+
+9 rows in set (0.00 sec)
+
+mysql> SELECT * FROM media;
+Empty set (0.00 sec)
+
+mysql> SELECT * FROM users;
++-----+------------+---------------+--------------------------------+----------------------+---------------------+---------------------+
+| id  | first_name | last_name     | email                          | phone                | created_at          | update_at           |
++-----+------------+---------------+--------------------------------+----------------------+---------------------+---------------------+
+|   1 | Jamey      | Armstrong     | dave.watsica@example.org       | (674)974-0031        | 2014-11-14 01:14:58 | 2012-09-15 07:36:42 |
+|   2 | Lisa       | Flatley       | zane61@example.com             | 1-201-289-9910x51776 | 2020-06-20 16:29:36 | 2012-05-05 13:32:23 |
+|   3 | Ray        | Nikolaus      | mike.braun@example.com         | 613.793.9580x94663   | 2019-07-19 23:47:10 | 2012-03-15 13:52:03 |
+|   4 | Casimir    | Denesik       | abernathy.morton@example.net   | 293-439-3107         | 2019-03-10 13:46:14 | 2015-09-20 11:39:08 |
+|   5 | Kelsi      | Padberg       | jacey29@example.com            | +71(8)2861859913     | 2020-02-01 22:42:58 | 2021-02-17 04:33:04 |
+|   6 | Cleve      | Becker        | achamplin@example.org          | 230.114.0602         | 2019-07-07 21:14:54 | 2015-04-30 04:50:39 |
+|   7 | Aniya      | Bode          | jacobson.anissa@example.com    | 953.364.9203x911     | 2021-02-26 17:13:39 | 2019-03-29 15:34:59 |
+|   8 | Devan      | Pollich       | susana.nitzsche@example.com    | 07309675198          | 2012-03-09 03:57:44 | 2014-05-11 13:12:58 |
+|   9 | Christy    | Berge         | allene59@example.org           | 528-873-2325         | 2020-01-24 00:24:48 | 2021-03-24 11:18:23 |
+|  10 | Carmela    | Treutel       | lazaro.west@example.net        | 06322119370          | 2015-08-29 14:37:26 | 2019-03-16 15:44:40 |
+|  11 | Rosetta    | Nikolaus      | pbailey@example.com            | (826)973-5629x2122   | 2018-10-10 20:02:40 | 2018-10-20 20:44:20 |
+|  12 | Vilma      | Witting       | reanna46@exampl
